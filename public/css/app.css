@@ -855,9 +855,6 @@ select {
 .float-right {
 	float: right;
 }
-.m-2 {
-	margin: 0.5rem;
-}
 .mx-auto {
 	margin-left: auto;
 	margin-right: auto;
@@ -873,14 +870,6 @@ select {
 .my-4 {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-}
-.my-1 {
-	margin-top: 0.25rem;
-	margin-bottom: 0.25rem;
-}
-.my-6 {
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
 }
 .ml-3 {
 	margin-left: 0.75rem;
