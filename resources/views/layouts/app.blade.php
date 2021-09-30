@@ -32,10 +32,12 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.css">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/holder.js') }}" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.js" defer></script>
 </head>
 
 <body class="font-sans antialiased">
@@ -54,12 +56,12 @@
             <div class="hidden sm:block">
                 @include('layouts.sidenav')
             </div>
-            <div class="mx-auto">
+            <div class="mx-auto flex-grow">
                 {{ $slot }}
             </div>
         </main>
         @include('layouts.footer')
     </div>
+    @yield('script')
 </body>
-
 </html>

@@ -23,7 +23,15 @@ Route::get('about-us', function () {
 
 Route::get('/', function () {
     return view('news');
+})->name('home');
+
+Route::get('news', function () {
+    return view('news');
 })->name('news');
+
+Route::get('calendar', function () {
+    return view('calendar');
+})->name('calendar');
 
 Route::get('contact-us', function () {
     return view('contact-us');
