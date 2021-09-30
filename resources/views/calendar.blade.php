@@ -6,7 +6,7 @@
     </x-slot>
 
     <div class="container p-4 mx-auto overflow-auto">
-        <div class="bg-white rounded-md shadow-md mx-auto py-4 px-8">
+        <div class="bg-white rounded-md shadow-md mx-auto py-4 px-8 w-full">
             <div id='calendar'></div>
         </div>
     </div>
