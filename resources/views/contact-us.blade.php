@@ -14,7 +14,8 @@
             </div>
             <div class="flex flex-col px-8 py-6 space-y-3">
                 <span class="text-gray-700 text-3xl">Contact Us</span>
-                <form action="" method="post" class="space-y-3">
+                <form action="{{ route('message') }}" method="post" class="space-y-3">
+                    {{ csrf_field() }}
                     <div>
                         <x-label for="name" class="text-yellow-600" value="Name" />
         
@@ -31,7 +32,7 @@
                         <textarea name="message" class="w-full rounded-md shadow-sm border-gray-300 focus:border-yellow-300 focus:ring focus:ring-yellow-200 focus:ring-opacity-50" cols="30" rows="3"></textarea>
                     </div>
                     <div>
-                        <a href="#" class="bg-yellow-300 hover:bg-yellow-400 rounded-md py-2 px-5 text-white">Contact Us</a>
+                        <x-button class="bg-yellow-300 hover:bg-yellow-400 rounded-md py-2 px-5 text-white">Contact Us</x-button>
                     </div>
                 </form>
             </div>

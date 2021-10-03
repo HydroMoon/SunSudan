@@ -38,6 +38,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/holder.js') }}" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.js" defer></script>
+    @yield('script_head')
 </head>
 
 <body class="font-sans antialiased">

@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\GuestController;
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,6 +15,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::resource('admin-news', NewsController::class);
+Route::get('messages', [AdminController::class, 'showMessages'])->name('admin.messages');
+
+Route::get('news', [GuestController::class, 'index'])->name('news');
+Route::get('news/{slug}', [GuestController::class, 'getSingle'])->where('slug', '[\w\d\-\_]+')->name('news.single');
+
+Route::post('message', [GuestController::class, 'storeMessage'])->name('message');
 
 Route::get('dashboard', function () {
     return view('dashboard');
@@ -22,12 +32,14 @@ Route::get('about-us', function () {
 })->name('about-us');
 
 Route::get('/', function () {
-    return view('news');
+    return view('welcome');
 })->name('home');
 
-Route::get('news', function () {
-    return view('news');
-})->name('news');
+
+
+Route::get('edit', function () {
+    return view('admin.edit-news');
+});
 
 Route::get('calendar', function () {
     return view('calendar');
