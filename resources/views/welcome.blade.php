@@ -48,10 +48,10 @@
                 <div>
                     <span class="text-2xl font-semibold text-gray-800 md:text-4xl">⏰ Coming<span
                             class="ml-2 text-yellow-600">Soon</span> ⏰</span>
-                    <h1 class="py-5 text-5xl font-semibold text-gray-800 md:text-6xl">Sun<span
+                    <h1 class="py-5 text-5xl font-semibold text-gray-800 md:text-6xl">Scaling Up Nutritons<span
                             class="ml-2 text-yellow-600">Sudan</span></h1>
 
-                    <p class="mt-2 text-sm text-gray-500 md:text-lg"><a href="https://fontgenerator.org/">
+                    <p class="mt-2 text-sm text-gray-500 md:text-lg"><a href="#">
                         By 2030, a world free from malnutrition in all its forms. Led by governments, supported by organisations and individuals – collective action ensures every child, adolescent, mother and family can realise their right to food and nutrition, reach their full potential and shape sustainable and prosperous societies.</p>
                     <div class="flex space-x-3 justify-center lg:justify-start mt-6">
                         <a href="#"
