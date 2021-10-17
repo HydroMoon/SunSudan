@@ -9,7 +9,7 @@
         <div class="bg-white rounded-md shadow-md mx-auto max-w-5xl">
             <div class="bg-gray-50 border-b flex justify-between items-center">
                 <div class="px-8 py-2 text-gray-700">
-                    <span class="font-semibold">By </span>Qasim Nouh
+                    <span class="font-semibold">By </span>SunSudan
                 </div>
                 <div class="px-8 py-2 text-gray-700">
                     Created on: {{  date_format($news->created_at, 'd, M Y h:m A')  }}

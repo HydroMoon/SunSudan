@@ -6,6 +6,7 @@ use App\Models\News;
 use Illuminate\Http\Request;
 use Purifier;
 use Image;
+use Illuminate\Support\Facades\Storage;
 
 class NewsController extends Controller
 {
@@ -34,7 +35,7 @@ class NewsController extends Controller
             $image = $request->file('cover');
             $filename = time() . '.' . $image->getClientOriginalExtension();
             $location = public_path('images/' . $filename);
-            Image::make($image)->fit(750, 300)->save($location);
+            Image::make($image)->fit(1920, 1080)->save($location);
 
             $validated['cover'] = $filename;
         }
@@ -55,14 +56,36 @@ class NewsController extends Controller
 
     public function update($id, Request $request)
     {
-        $validated = $request->validate([
-            'title' => 'required|max:255',
-            'slug' => 'required|alpha_dash|min:5|max:255|unique:news,slug',
-            'body' => 'string',
-            'cover' => 'sometimes|image',
-        ]);
-
+        $validated = null;
         
+        if ($request->slug == News::find($id)->slug) {
+            $validated = $request->validate([
+                'title' => 'required|max:255',
+                'body' => 'string',
+                'cover' => 'sometimes|image',
+            ]);
+        } else {
+            $validated = $request->validate([
+                'title' => 'required|max:255',
+                'slug' => 'required|alpha_dash|min:5|max:255|unique:news,slug',
+                'body' => 'string',
+                'cover' => 'sometimes|image',
+            ]);
+        }
+
+        if ($request->hasFile('cover')) {
+            $image = $request->file('cover');
+            $filename = time() . '.' . $image->getClientOriginalExtension();
+            $location = public_path('images/' . $filename);
+            Image::make($image)->fit(1920, 1080)->save($location);
+    
+            $oldfilename = News::find($id)->cover;
+    
+            $validated['cover'] = $filename;
+
+            Storage::delete($oldfilename);
+    
+          }
 
         $validated['body'] = Purifier::clean($request->body);
 

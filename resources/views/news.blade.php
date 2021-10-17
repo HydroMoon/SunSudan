@@ -14,16 +14,15 @@
                         <div>
                             <span class="text-2xl text-gray-700 leading-normal font-semibold hover:underline">{{ $item->title }}</span>
                             <br>
-                            <p>{!! mb_substr(strip_tags($item->body), 0, 300) !!}{{ strlen(strip_tags($item->body))
-                                > 300 ? "..." : "" }}</p>
+                            <p>{!! mb_substr(strip_tags($item->body), 0, 200) !!}{{ strlen(strip_tags($item->body))
+                                > 200 ? "..." : "" }}</p>
                             <br>
                             <a href="{{ route('news.single', $item->slug) }}"
-                                class="bg-yellow-300 hover:bg-yellow-400 rounded-md transition duration-300 p-2 px-2 text-md text-white float-right">Read
+                                class="bg-yellow-500 hover:bg-yellow-400 rounded-md transition duration-300 p-2 px-2 text-md text-white float-right">Read
                                 more...</a>
                         </div>
                     </div>
                     <div class="hidden sm:flex sm:flex-1">
-
                         <img class="object-cover rounded-r-md"
                             src="{{ asset('images/' . $item->cover) }}"
                             alt="">

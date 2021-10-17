@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-lg text-gray-600 leading-tight">
-            Reach for us for any questions...
+            Check our events schedule...
         </h2>
     </x-slot>
 
@@ -30,6 +30,7 @@
                     editable: true,
                     initialView: 'dayGridMonth',
                     editable: true,
+                    events: {!! $event !!},
                 });
                 calendar.render();
             });

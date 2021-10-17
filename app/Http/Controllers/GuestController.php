@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Media;
+use App\Models\Event;
 use App\Models\Message;
 use App\Models\News;
 use Illuminate\Http\Request;
@@ -32,5 +34,20 @@ class GuestController extends Controller
         Message::create($validated);
 
         return redirect()->route('contact-us');
+    }
+
+    // Images gallery
+    public function showImages()
+    {
+        $media = Media::all();
+
+        return view('media', compact('media'));
+    }
+
+    public function getEvent()
+    {
+        $event = json_encode(Event::all('title', 'start', 'end')->toArray(), JSON_UNESCAPED_UNICODE);
+
+        return view('calendar', compact('event'));
     }
 }

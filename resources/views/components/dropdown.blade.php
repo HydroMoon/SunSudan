@@ -2,6 +2,9 @@
 
 @php
 switch ($align) {
+    case 'none':
+        $alignmentClasses = 'mt-0';
+        break;
     case 'left':
         $alignmentClasses = 'origin-top-left left-0';
         break;
@@ -21,7 +24,7 @@ switch ($width) {
 }
 @endphp
 
-<div class="relative" x-data="{ open: false }" @click.away="open = false" @close.stop="open = false">
+<div class="relative my-auto" x-data="{ open: false }" @click.away="open = false" @close.stop="open = false">
     <div @click="open = ! open">
         {{ $trigger ?? ''  }}
     </div>

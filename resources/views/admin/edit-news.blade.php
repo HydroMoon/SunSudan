@@ -31,7 +31,7 @@
                             <div class="w-full">
                                 <x-label for="cover" class="text-yellow-600" value="Cover" />
                 
-                                <x-input id="cover" class="block mt-1 w-full p-2 focus:outline-none focus:ring-yellow-300" type="file" name="cover" required autofocus />
+                                <x-input id="cover" class="block mt-1 w-full p-2 focus:outline-none focus:ring-yellow-300" type="file" name="cover" autofocus />
                             </div>
                         </div>
                         <textarea id="mytextarea" name="body" rows="15">

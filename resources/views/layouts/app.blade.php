@@ -29,6 +29,9 @@
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
@@ -41,9 +44,10 @@
     @yield('script_head')
 </head>
 
-<body class="font-sans antialiased">
-    <div class="min-h-screen bg-gray-100">
+<body class="font-mono antialiased">
+    <div class="flex flex-col min-h-screen bg-gray-100 font-montserrat">
         @include('layouts.navigation')
+        @include('sweetalert::alert')
 
         <!-- Page Heading -->
         <header class="bg-white shadow">
@@ -53,7 +57,7 @@
         </header>
 
         <!-- Page Content -->
-        <main class="flex">
+        <main class="flex flex-grow">
             <div class="hidden sm:block">
                 @include('layouts.sidenav')
             </div>
@@ -65,4 +69,5 @@
     </div>
     @yield('script')
 </body>
+
 </html>
