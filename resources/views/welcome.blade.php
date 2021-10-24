@@ -48,7 +48,7 @@
                 <div>
                     <span class="text-2xl font-semibold text-gray-800 md:text-4xl">⏰ Coming<span
                             class="ml-2 text-yellow-600">Soon</span> ⏰</span>
-                    <h1 class="py-5 text-5xl font-semibold text-gray-800 md:text-6xl">Scaling Up Nutritons<span
+                    <h1 class="py-5 text-5xl font-semibold text-gray-800 md:text-6xl">Scaling Up Nutriton<span
                             class="ml-2 text-yellow-600">Sudan</span></h1>
 
                     <p class="mt-2 text-sm text-gray-500 md:text-lg"><a href="#">
