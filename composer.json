@@ -11,8 +11,11 @@
         "intervention/image": "^2.6",
         "laravel/framework": "^8.54",
         "laravel/sanctum": "^2.11",
+        "laravel/serializable-closure": "^1.0",
         "laravel/tinker": "^2.5",
         "mews/purifier": "^3.3",
+        "nette/schema": "^1.2",
+        "opis/closure": "^3.5",
         "realrashid/sweet-alert": "^4.0",
         "spatie/laravel-newsletter": "^4.10",
         "wulfheart/pretty_routes": "^0.3.0"
