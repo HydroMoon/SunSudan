@@ -17,7 +17,6 @@ class CreateNewsTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('body');
-            $table->string('uname');
             $table->string('slug')->unique();
             $table->string('cover')->nullable();
             $table->timestamps();
