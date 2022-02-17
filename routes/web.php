@@ -60,6 +60,6 @@ Route::post('subscribe', [NewsLetterController::class, 'store'])->name('mail.sub
 Route::get('about-us', function () { return view('about-us'); })->name('about-us');
 
 // Home
-Route::get('/', function () { return view('welcome'); })->name('home');
+Route::get('/', function () { return view('home'); })->name('home');
 
 require __DIR__.'/auth.php';
