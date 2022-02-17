@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-lg text-gray-600 leading-tight">
-            Enjoy the latest news directly from the source...
+            SuN Sudan News...
         </h2>
     </x-slot>
 
