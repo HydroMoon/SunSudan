@@ -92,12 +92,12 @@
                 </x-dropdown>
                 @else
 
-                <x-dropdown-link class="rounded-md hover:bg-yellow-500 hover:text-white" :href="route('login')">
+                {{-- <x-dropdown-link class="rounded-md hover:bg-yellow-500 hover:text-white" :href="route('login')">
                     Login
-                </x-dropdown-link>
-                <x-dropdown-link class="rounded-md" :href="route('register')">
+                </x-dropdown-link> --}}
+                {{-- <x-dropdown-link class="rounded-md" :href="route('register')">
                     Register
-                </x-dropdown-link>
+                </x-dropdown-link> --}}
 
                 @endif
             </div>
@@ -171,12 +171,12 @@
             </div>
             @else
             <div class="mt-3 space-y-1">
-                <x-responsive-nav-link :href="route('login')">
+                {{-- <x-responsive-nav-link :href="route('login')">
                     Login
-                </x-responsive-nav-link>
-                <x-responsive-nav-link :href="route('register')">
+                </x-responsive-nav-link> --}}
+                {{-- <x-responsive-nav-link :href="route('register')">
                     Register
-                </x-responsive-nav-link>
+                </x-responsive-nav-link> --}}
             </div>
             @endif
         </div>
