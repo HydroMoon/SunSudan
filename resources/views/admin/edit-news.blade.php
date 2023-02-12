@@ -24,11 +24,6 @@
                                 <x-input id="title" class="block mt-1 w-full" type="text" name="title" value="{{ $news->title }}" required autofocus />
                             </div>
                             <div class="w-full">
-                                <x-label for="slug" class="text-yellow-600" value="Slug" />
-                
-                                <x-input id="slug" class="block mt-1 w-full" type="text" name="slug" value="{{ $news->slug }}" required autofocus />
-                            </div>
-                            <div class="w-full">
                                 <x-label for="cover" class="text-yellow-600" value="Cover" />
                 
                                 <x-input id="cover" class="block mt-1 w-full p-2 focus:outline-none focus:ring-yellow-300" type="file" name="cover" autofocus />

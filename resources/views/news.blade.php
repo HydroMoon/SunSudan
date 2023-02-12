@@ -12,7 +12,7 @@
                     <div class="col-span-2  py-4 px-8">
                         <span class="font-light text-gray-600">{{ date_format($item->created_at, 'd, M Y h:m A') }}</span>
                         <div>
-                            <span class="text-2xl text-gray-700 leading-normal font-semibold hover:underline">{{ $item->title }}</span>
+                            <span class="text-2xl text-gray-700 leading-normal font-semibold hover:underline"><a href="{{ route('news.single', $item->slug) }}">{{ $item->title }}</a></span>
                             <br>
                             <p>{!! mb_substr(strip_tags($item->body), 0, 200) !!}{{ strlen(strip_tags($item->body))
                                 > 200 ? "..." : "" }}</p>

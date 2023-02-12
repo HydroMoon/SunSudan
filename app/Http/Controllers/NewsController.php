@@ -26,7 +26,6 @@ class NewsController extends Controller
     {
         $validated = $request->validate([
             'title' => 'required|max:255',
-            'slug' => 'required|alpha_dash|min:5|max:255|unique:news,slug',
             'body' => 'string',
             'cover' => 'sometimes|image',
         ]);
