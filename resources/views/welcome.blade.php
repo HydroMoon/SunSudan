@@ -46,8 +46,8 @@
         <div class="flex bg-white h-screen">
             <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
                 <div>
-                    <span class="text-2xl font-semibold text-gray-800 md:text-4xl">⏰ Coming<span
-                            class="ml-2 text-yellow-600">Soon</span> ⏰</span>
+                    <span class="text-2xl font-semibold text-gray-800 md:text-4xl">⏰ Coming Very<span
+                            class="ml-2 text-yellow-600">Very Soon</span> ⏰</span>
                     <h1 class="py-5 text-5xl font-semibold text-gray-800 md:text-6xl">Scaling Up Nutrition<span
                             class="ml-2 text-yellow-600">Sudan</span></h1>
 
