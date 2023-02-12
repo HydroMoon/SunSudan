@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-lg text-gray-600 leading-tight">
-            Welcome to Scaling Up Nutrition Sudan Orgnization
+            Welcome to Scaling Up Nutrition Sudan (Sun Sudan)
         </h2>
     </x-slot>
 
