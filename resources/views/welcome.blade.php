@@ -68,7 +68,7 @@
             </div>
             <div class="hidden lg:block lg:w-1/2">
                 <div class="h-full object-cover"
-                    style="background-image: url(https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80)">
+                    style="background-image: url(https://web.facebook.com/SUNCivilSocietyAlliancePakistan/photos/a.405591292951133/405619416281654/)">
                     <div class="h-full bg-blue-500 opacity-50"></div>
                 </div>
             </div>
