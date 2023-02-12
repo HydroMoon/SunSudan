@@ -30,12 +30,12 @@
                 <br>
                 <label class="text-gray-600">Join our news letter.</label>
                 <div>
-                    <form action="{{ route('mail.sub') }}" method="post">
+                    <form action="#" method="post">
                         @csrf
                         <input
                         class="mr-2 rounded-md border-gray-300 focus:border-yellow-400 focus:ring focus:ring-opacity-25 focus:ring-yellow-300 focus:ring-offset-2 text-gray-600"
                         type="email" name="email" placeholder="example@email.com">
-                        <button type="submit"
+                        <button type="button"
                         class="p-2 text-white bg-yellow-500 hover:bg-yellow-400 transition duration-300 rounded-md shadow-sm">Submit</button>
                     </form>
                 </div>
