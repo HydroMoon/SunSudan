@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-lg text-gray-600 leading-tight">
-            SuN Sudan News...
+            Sun Sudan News...
         </h2>
     </x-slot>
 
