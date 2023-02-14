@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-lg text-gray-600 leading-tight">
-            This is what we doing at our facility.
+            About Sun Sudan
         </h2>
     </x-slot>
 
