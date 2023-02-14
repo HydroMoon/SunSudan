@@ -9,7 +9,13 @@
                     <a href="#" class="text-gray-400 hover:text-gray-500 hover:underline">About Us</a>
                     <a href="#" class="text-gray-400 hover:text-gray-500 hover:underline">Contact Us</a>
                 </div>
-              
+                <div class="flex flex-col md:items-start space-y-1">
+                    <label class="text-gray-600">Links</label>
+                    <a href="#" class="text-gray-400 hover:text-gray-500 hover:underline">Main</a>
+                    <a href="#" class="text-gray-400 hover:text-gray-500 hover:underline">News</a>
+                    <a href="#" class="text-gray-400 hover:text-gray-500 hover:underline">About Us</a>
+                    <a href="#" class="text-gray-400 hover:text-gray-500 hover:underline">Contact Us</a>
+                </div>
                 <div class="flex flex-col md:items-start space-y-1">
                     <label class="text-gray-600">Organization</label>
                     <a href="#" class="text-gray-400 hover:text-gray-500 hover:underline">WFP</a>
