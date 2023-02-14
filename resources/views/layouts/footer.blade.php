@@ -12,10 +12,10 @@
               
                 <div class="flex flex-col md:items-start space-y-1">
                     <label class="text-gray-600">Organization</label>
-                    <a href="https://khartoum.aics.gov.it/en/home-eng/" class="text-gray-400 hover:text-gray-500 hover:underline">AICS</a>
-                    <a href="https://www.wfp.org/countries/sudan" class="text-gray-400 hover:text-gray-500 hover:underline">WFP</a>
-                    <a href="https://www.unicef.org/sudan/" class="text-gray-400 hover:text-gray-500 hover:underline">UNICEF</a>
-                    <a href="https://www.emro.who.int/countries/sdn/index.html" class="text-gray-400 hover:text-gray-500 hover:underline">WHO</a>
+                    <a href="https://khartoum.aics.gov.it/en/home-eng/" target="_blank" class="text-gray-400 hover:text-gray-500 hover:underline">AICS</a>
+                    <a href="https://www.wfp.org/countries/sudan" target="_blank" class="text-gray-400 hover:text-gray-500 hover:underline">WFP</a>
+                    <a href="https://www.unicef.org/sudan/" target="_blank" class="text-gray-400 hover:text-gray-500 hover:underline">UNICEF</a>
+                    <a href="https://www.emro.who.int/countries/sdn/index.html" target="_blank" class="text-gray-400 hover:text-gray-500 hover:underline">WHO</a>
                 </div>
             </div>
             <div class="flex flex-col md:items-start space-y-1">
